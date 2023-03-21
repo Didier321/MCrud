@@ -1,0 +1,83 @@
+use('Tienda-SOFF');
+
+
+// db.createCollection("ClientesTienda", {
+//     validator: {
+//        $jsonSchema: {
+//         properties:{
+//              nombre: {
+//                 bsonType: "string",
+               
+//              },
+//              apelldio: {
+//                 bsonType: "string",
+               
+//              },
+//              edad: {
+//                  bsonType: "int",
+//                  minimum: 1,
+//                  maximum: 200,
+                 
+//                 },
+//             telefono: {
+//                 bsonType: "string",
+       
+//                 },
+//         }
+//        }
+//     }
+//  } );
+db.createCollection("ProductosTienda", {
+    validator: {
+       $jsonSchema: {
+        properties:{
+             nombre: {
+                bsonType: "string",
+               
+             },
+             precio: {
+                bsonType: "string",            
+             },
+             
+            color: {
+                bsonType: "string",
+       
+                },
+            material: {
+                bsonType: "string",
+                },
+            department: {
+                bsonType: "string",
+                },
+        }
+       }
+    }
+ } );
+// db.createCollection("ProveedoresTienda", {
+//     validator: {
+//        $jsonSchema: {
+//         properties:{
+//              nombre: {
+//                 bsonType: "string",
+                 
+//               },
+//               apellido: {
+//                   bsonType: "string",
+                 
+//               },
+//               fecha: {
+//                   bsonType: "date",          
+//               },
+//               producto: {
+//                   bsonType: "string",                
+//                   },
+//               empresa: {
+//                   bsonType: "string",        
+//                   },
+//               direccion: {
+//                   bsonType: "string",
+//                   },
+//         }
+//        }
+//     }
+//  } );
